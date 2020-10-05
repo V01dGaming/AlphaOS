@@ -1,3 +1,4 @@
+term.clear()
 local nextFile = "/OS"
 local files = {
 	[1] = {

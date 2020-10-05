@@ -5,8 +5,8 @@ local files = {
 		""
 	},
 	[2] = {
-		"/Sys/.autoupdate",
-		""
+		"/Sys/.autoUpdate",
+		"https://raw.githubusercontent.com/V01dGaming/AlphaOS/main/Sys/.autoUpdate"
 	},
 	[3] = {
 		"OS",
@@ -44,4 +44,8 @@ if rVersion ~= lVersion then
 end
 
 local next = nextFile
+<<<<<<< HEAD
 shell.run(next)
+=======
+shell.run(next)
+>>>>>>> 46b204d85a5906fe817ceb6335f6b54fa8cf6e52

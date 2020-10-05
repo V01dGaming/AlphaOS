@@ -2,7 +2,7 @@ local nextFile = "/OS"
 local files = {
 	[1] = {
 		"startup",
-		""
+		"https://raw.githubusercontent.com/V01dGaming/AlphaOS/main/startup"
 	},
 	[2] = {
 		"/Sys/.autoUpdate",
@@ -10,13 +10,13 @@ local files = {
 	},
 	[3] = {
 		"OS",
-		""
+		"https://raw.githubusercontent.com/V01dGaming/AlphaOS/main/OS"
 	}
 }
 
 
 
-remoteVersion = http.get("https://raw.githubusercontent.com/V01dGaming/MelodyOS/master/Sys/remoteVersion")
+remoteVersion = http.get("https://raw.githubusercontent.com/V01dGaming/AlphaOS/main/Sys/remoteVersion")
 
 local localVersion = fs.open("Sys/.version", "r")
 local rVersion = remoteVersion.readAll()
@@ -44,8 +44,4 @@ if rVersion ~= lVersion then
 end
 
 local next = nextFile
-<<<<<<< HEAD
 shell.run(next)
-=======
-shell.run(next)
->>>>>>> 46b204d85a5906fe817ceb6335f6b54fa8cf6e52
